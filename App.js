@@ -1,16 +1,18 @@
 
 // init selectors
 const catbutton =document.getElementById("cat_btn");
-const dogbutton =document.getElementById("dog_btn");
 const catresult = document.getElementById("cat_result");
-const dogresult = document.getElementById("dog_result");
+
 
 
 // add eventlisteners 
 
-catbutton.addEventListener('click', randomAnimals)
+catbutton.addEventListener('click', randomAnimalsCats)
 
-function randomAnimals ()
+
+
+// functions 
+function randomAnimalsCats ()
 {
     fetch('https://aws.random.cat/meow')
     .then ( res => res.json())
